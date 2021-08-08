@@ -1,8 +1,8 @@
 # micropress 🕹
 
-**Micropress** isn't really a project per se -- I was looking into various techniques for [automatic text summarization](https://en.wikipedia.org/wiki/Automatic_summarization), and came up with a simple algorithm I wanted to implement myself that combined elements of existing approaches, and Micropress is just the algorithm that I came up with, in the form of an Ink library. The code you find here is an _extractive text summarization algorithm_: it tries to produce a good-enough summary of some source text by discovering a few representaative sentences from the larger text.
+**Micropress** isn't really a project per se -- I was looking into various techniques for [automatic text summarization](https://en.wikipedia.org/wiki/Automatic_summarization), and came up with a simple algorithm I wanted to implement myself that combined elements of existing approaches. Micropress is just the algorithm that I came up with, in the form of an [Ink](https://dotink.co) library. The code you find here is an _extractive text summarization algorithm_: it tries to produce a good-enough summary of some source text by discovering a few representative sentences from the larger text.
 
-The algorithm estimates the "representativeness" of a given sentence in the rest of the text by computing how much of the significant tokens (words) in the given sentence is shared with the sentences in the rest of the text.
+The algorithm estimates the "representativeness" of a given sentence in the rest of the text by computing how many of the significant tokens (words) in the given sentence is shared with the sentences in the rest of the text.
 
 A very close variation of this algorithm is used for text summarization in [Revery](https://github.com/thesephist/revery).
 
