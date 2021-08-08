@@ -1,3 +1,5 @@
+` demo of micropress.summarize() `
+
 std := load('vendor/std')
 str := load('vendor/str')
 
@@ -7,7 +9,7 @@ readFile := std.readFile
 summarize := load('lib/micropress').summarize
 
 readFile('./sample.txt', file => file :: {
-	() -> log('could not read file')
+	() -> log('Could not read file to summarize!')
 	_ -> log(summarize(file, 1000))
 })
 
